@@ -1,0 +1,115 @@
+main {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.title {
+    padding: 10px;
+    margin-top: -30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+}
+
+.article {
+    background-color: rgb(255, 255, 255);
+    width: 40%;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgb(139, 139, 139);
+}
+ 
+.underline {
+    height: 3px;
+    width: 100px;
+    background-color: rgb(85, 85, 255);
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: -20px;
+}
+
+.imgContainer {
+    height: 150px;
+    width: 150px; 
+    margin: 0 auto;
+    padding-top: 50px;
+    position: relative;
+}
+
+.imgContainer::after {
+    font-family: 'Font Awesome 5 free';
+    font-weight: 900;
+    content: "\f10e";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    transform: translateY(120%);
+    background: hsl(205, 78%, 60%);
+    color: white;
+}
+
+.imgContainer::before {
+    content: "";
+    width: 100%;
+    height: 75%;
+    background: hsl(205, 78%, 60%);
+    position: absolute;
+    top: 2.7rem;
+    right: -0.4rem;
+    border-radius: 50%;
+  }
+
+#personImg {
+    width: 100%;
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+}
+
+#name {
+    margin-top: 20px;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 5px;
+}
+#job {
+    margin-top: -15px;
+    font-family: 'Roboto Mono', monospace;
+    color:hsl(205, 100%, 50%);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+#review {
+    padding: 50px;
+    font-size: 18px;
+    font-family: 'Newsreader', serif;
+    margin-top: -30px;
+    color: rgb(69, 102, 128)
+}
+
+.btn-container {
+    margin-top: -30px;
+    padding: 10px;
+    padding-bottom: 30px;
+}
+
+.btn-container button {
+    background: transparent;
+    border: none;
+    transition: all 0.3s linear;
+    font-size: 30px;
+    color:hsl(205, 100%, 82%);
+}
+
+.btn-container button:hover {
+    color:hsl(205, 100%, 50%);
+    cursor: pointer;
+}
